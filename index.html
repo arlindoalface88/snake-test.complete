@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Snake Game</title>
+
+<style>
+
+body{
+background:black;
+color:white;
+text-align:center;
+font-family:Arial;
+}
+
+canvas{
+background:#111;
+border:2px solid white;
+}
+
+.controls{
+margin-top:20px;
+}
+
+button{
+width:80px;
+height:80px;
+font-size:30px;
+margin:5px;
+border-radius:10px;
+border:none;
+background:#333;
+color:white;
+}
+
+button:active{
+background:#666;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Snake 🐍</h1>
+<h2 id="score">Score: 0</h2>
+
+<canvas id="game" width="600" height="600"></canvas>
+
+<div class="controls">
+
+<div>
+<button onclick="setDirection('UP')">⬆️</button>
+</div>
+
+<div>
+<button onclick="setDirection('LEFT')">⬅️</button>
+<button onclick="setDirection('DOWN')">⬇️</button>
+<button onclick="setDirection('RIGHT')">➡️</button>
+</div>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
